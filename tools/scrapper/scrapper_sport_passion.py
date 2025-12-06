@@ -9,6 +9,7 @@ class ScrapperSportPassion:
     def scrap_link():
         url = "https://www.sport-passion.fr/categories/conseils-fitness-minceur.php"
         data = RequestManager.get(url)
+
         urls = ParserManager.get_between(data, "/conseils/", ".php")
         for i in range(len(urls)):
             urls[i] = "https://www.sport-passion.fr/conseils/" + urls[i] + ".php"
