@@ -9,8 +9,7 @@ class ScrapperSportPassion:
     def scrap_link():
         url = "https://www.sport-passion.fr/categories/conseils-fitness-minceur.php"
         data = RequestManager.get(url)
-        # /conseils/ to  ".php"
-        urls = ParserManager.get_between(data, '/conseils/', '.php')
+        urls = ParserManager.get_between(data, "/conseils/", ".php")
         for i in range(len(urls)):
             urls[i] = "https://www.sport-passion.fr/conseils/" + urls[i] + ".php"
         return urls
@@ -18,18 +17,16 @@ class ScrapperSportPassion:
     @staticmethod
     def scrap_article(url: str) -> dict:
         data = RequestManager.get(url)
-        title = ParserManager.get_between(data, '<title>', '</title>')[0]
-        content_parts = ParserManager.get_between(data, '<p>', '</p>')
+        title = ParserManager.get_between(data, "<title>", "</title>")[0]
+        content_parts = ParserManager.get_between(data, "<p>", "</p>")
         content = "\n".join(content_parts)
-        pictures_urls = ParserManager.get_between(data, 'pictures/', '"', filter_to_remove="/")
+        pictures_urls = ParserManager.get_between(
+            data, "pictures/", '"', filter_to_remove="/"
+        )
         for i in range(len(pictures_urls)):
             full_pic_url = "https://www.sport-passion.fr/pictures/" + pictures_urls[i]
             pictures_urls[i] = full_pic_url
-        return {
-            "title": title,
-            "content": content,
-            "pictures_urls": pictures_urls
-        }
+        return {"title": title, "content": content, "pictures_urls": pictures_urls}
 
     @staticmethod
     def run():

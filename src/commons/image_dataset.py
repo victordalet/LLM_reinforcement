@@ -11,11 +11,13 @@ class ImageDataset(Dataset):
         self.tokenizer = tokenizer
         self.image_size = image_size
 
-        self.preprocess = transforms.Compose([
-            transforms.Resize((image_size, image_size)),
-            transforms.ToTensor(),
-            transforms.Normalize([0.5], [0.5])
-        ])
+        self.preprocess = transforms.Compose(
+            [
+                transforms.Resize((image_size, image_size)),
+                transforms.ToTensor(),
+                transforms.Normalize([0.5], [0.5]),
+            ]
+        )
 
         self.images = []
         self.prompts = []
@@ -45,7 +47,7 @@ class ImageDataset(Dataset):
             padding="max_length",
             max_length=77,
             truncation=True,
-            return_tensors="pt"
+            return_tensors="pt",
         )
 
         return {

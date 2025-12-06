@@ -33,7 +33,13 @@ class TrainTextModel:
 
         for article in self.dataset:
             text = article["title"] + "\n" + article["content"]
-            tokenized = self.tokenizer(text, return_tensors="pt", truncation=True, padding="max_length", max_length=512)
+            tokenized = self.tokenizer(
+                text,
+                return_tensors="pt",
+                truncation=True,
+                padding="max_length",
+                max_length=512,
+            )
             self.inputs.append(tokenized)
 
     def split_dataset(self):
@@ -44,10 +50,12 @@ class TrainTextModel:
     @staticmethod
     def data_collator(features):
         batch = {}
-        batch["input_ids"] = torch.stack([torch.tensor(f["input_ids"]) for f in
-                                          features])
-        batch["attention_mask"] = torch.stack([torch.tensor(f["attention_mask"]) for f
-                                               in features])
+        batch["input_ids"] = torch.stack(
+            [torch.tensor(f["input_ids"]) for f in features]
+        )
+        batch["attention_mask"] = torch.stack(
+            [torch.tensor(f["attention_mask"]) for f in features]
+        )
         batch["labels"] = batch["input_ids"].clone()
         return batch
 

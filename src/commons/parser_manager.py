@@ -4,7 +4,9 @@ from typing import List
 class ParserManager:
 
     @staticmethod
-    def get_between(text: str, start: str, end: str, filter_to_remove=None) -> List[str]:
+    def get_between(
+        text: str, start: str, end: str, filter_to_remove=None
+    ) -> List[str]:
         results = []
         start_len = len(start)
         end_len = len(end)
@@ -26,5 +28,3 @@ class ParserManager:
                 results.remove(item)
 
         return results
-
-
