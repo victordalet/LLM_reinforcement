@@ -18,3 +18,9 @@ streamlit run src/app/app.py
 ```bash
 uv run tools/train_txt_model.py
 ```
+
+# Run train img
+
+```bash
+uv run tools/train_image_model.py
+```
