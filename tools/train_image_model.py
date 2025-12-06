@@ -33,8 +33,7 @@ class TrainImageModel:
         model_name = "runwayml/stable-diffusion-v1-5"
 
         self.pipeline = StableDiffusionPipeline.from_pretrained(
-            model_name,
-            torch_dtype=torch.float32
+            model_name, torch_dtype=torch.float32
         )
 
         self.tokenizer = self.pipeline.tokenizer
@@ -53,7 +52,9 @@ class TrainImageModel:
         self.load_model()
         self.tokenize_and_prepare_dataset()
 
-        train_loader = DataLoader(self.train_dataset, batch_size=batch_size, shuffle=True)
+        train_loader = DataLoader(
+            self.train_dataset, batch_size=batch_size, shuffle=True
+        )
 
         optimizer = torch.optim.AdamW(self.unet.parameters(), lr=lr)
 
@@ -82,7 +83,9 @@ class TrainImageModel:
 
                 # --- Encode image to 4-channel latents ---
                 with torch.no_grad():
-                    latents = self.pipeline.vae.encode(pixel_values).latent_dist.sample()
+                    latents = self.pipeline.vae.encode(
+                        pixel_values
+                    ).latent_dist.sample()
                     latents = latents * self.pipeline.vae.config.scaling_factor
 
                 # Create noise
@@ -93,19 +96,22 @@ class TrainImageModel:
                     0,
                     self.noise_scheduler.config.num_train_timesteps,
                     (latents.size(0),),
-                    device=device
+                    device=device,
                 ).long()
 
-                noisy_latents = self.noise_scheduler.add_noise(latents, noise, timesteps)
+                noisy_latents = self.noise_scheduler.add_noise(
+                    latents, noise, timesteps
+                )
 
                 # Encode text
                 encoder_hidden_states = self.pipeline.text_encoder(
-                    input_ids=input_ids,
-                    attention_mask=attention_mask
+                    input_ids=input_ids, attention_mask=attention_mask
                 )[0]
 
                 # Predict noise with UNet
-                model_pred = self.unet(noisy_latents, timesteps, encoder_hidden_states).sample
+                model_pred = self.unet(
+                    noisy_latents, timesteps, encoder_hidden_states
+                ).sample
 
                 loss = torch.nn.functional.mse_loss(model_pred, noise)
                 loss.backward()
@@ -114,7 +120,9 @@ class TrainImageModel:
 
                 global_step += 1
                 if global_step % 10 == 0:
-                    print(f"Epoch {epoch} | Step {global_step} | Loss {loss.item():.4f}")
+                    print(
+                        f"Epoch {epoch} | Step {global_step} | Loss {loss.item():.4f}"
+                    )
 
         DataManager.create_directory(out_dir)
         self.unet.save_pretrained(os.path.join(out_dir, "unet"))
