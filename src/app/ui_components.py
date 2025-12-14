@@ -114,7 +114,7 @@ def render_quick_questions():
 
 def handle_user_input():
     """Gère l'input utilisateur (questions prédéfinies et chat input)"""
-    # Gestion des questions pré-définies
+    # Gestion des questions pré définies
     if st.session_state.current_question:
         add_message("user", st.session_state.current_question)
         with st.chat_message("user"):
@@ -126,7 +126,7 @@ def handle_user_input():
         st.session_state.current_question = None
         st.rerun()
 
-    # Input utilisateur
+    #user input
     if prompt := st.chat_input("Quelle est ta question sur le fitness ou la nutrition ?"):
         add_message("user", prompt)
         with st.chat_message("user"):
