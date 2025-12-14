@@ -23,10 +23,10 @@ init_session_state()
 render_header()
 render_quick_questions()
 
+# historique du chat
+display_chat_history()
 
 # gestion utilisateur
 handle_user_input()
 
 
-# hsitoire du chat
-display_chat_history()

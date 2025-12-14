@@ -1,7 +1,6 @@
-
 """
-Module de styles personnalisés pour application Streamlit
-Contient des fonctions réutilisables pour injecter du CSS personnalisé
+Module de styles minimalistes pour application Streamlit
+Styles épurés et modernes pour une interface claire et performante
 """
 
 import streamlit as st
@@ -10,36 +9,153 @@ import streamlit as st
 def inject_global_styles():
     """
     Applique les styles globaux de base pour toute l'application. 
-    Inclut :  polices, couleurs de fond, marges générales. 
+    Arrière-plan neutre et conteneur principal épuré.
+    Compatible light mode et dark mode.
     """
     st.markdown("""
         <style>
-        /* Import de polices modernes */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        /* Import de police moderne */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        /* Variables CSS pour light/dark mode */
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary:  #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+            --accent-color: #2563eb;
+            --accent-hover: #1d4ed8;
+        }
+        
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --text-primary:  #f1f5f9;
+                --text-secondary: #cbd5e1;
+                --border-color: #334155;
+                --accent-color: #3b82f6;
+                --accent-hover: #2563eb;
+            }
+        }
         
         /* Styles globaux */
         * {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
         
-        /* Arrière-plan principal */
-        . stApp {
-            background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /* Body */
+        body {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
         }
         
         /* Conteneur principal */
         .main {
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
+            background-color: var(--bg-primary);
+            border-radius: 12px;
             padding: 2rem;
-            margin: 1rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
-        /* Supprime les marges par défaut */
+        /* Espacement des blocs */
         .block-container {
             padding-top: 2rem;
             padding-bottom: 2rem;
+            max-width: 900px;
+        }
+        
+        /* Supprimer le padding du top */
+        .main . block-container {
+            padding-top: 1rem;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+
+def inject_header_logo_style():
+    """
+    Style pour le header avec logo centré et titre.  
+    Logo + Titre "Coach Sportif IA" sur la même ligne
+    Sous-titre "Pose-moi une question…" en dessous
+    """
+    st.markdown("""
+        <style>
+        /* Conteneur du header */
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+        }
+        
+        /* Logo + Titre sur la même ligne */
+        .logo-title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Logo image */
+        .app-logo-img {
+            width: 80px;
+            height: 80px;
+            border-radius:  12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Logo emoji (fallback) */
+        .app-logo {
+            font-size:  3rem;
+            line-height: 1;
+        }
+        
+        /* Titre principal */
+        .app-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+        
+        /* Sous-titre */
+        .app-subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin:  0.5rem 0 0 0;
+            letter-spacing: 0.01em;
+        }
+        
+        /* Description */
+        .app-description {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin:  1rem 0 0.5rem 0;
+        }
+        
+        /* Badge/Tag */
+        .app-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius:  50px;
+            font-size:  0.9rem;
+            font-weight:  600;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         }
         </style>
     """, unsafe_allow_html=True)
@@ -47,49 +163,49 @@ def inject_global_styles():
 
 def inject_button_style():
     """
-    Personnalise tous les boutons de l'application.
-    Applique :  couleurs vives, effets de survol, animations, bordures arrondies.
+    Boutons minimalistes avec un style épuré et moderne.
     """
     st.markdown("""
         <style>
         /* Boutons principaux */
-        .stButton > button {
+        . stButton > button {
             width: 100%;
-            background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
+            background-color: var(--accent-color);
             color: white;
-            border: none;
-            border-radius: 12px;
-            padding: 0.8rem 1.5rem;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+            border:  none;
+            border-radius:  8px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
             cursor: pointer;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
         }
         
         /* Effet de survol */
         .stButton > button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
-            background: linear-gradient(135deg, #229954 0%, #27AE60 100%);
+            background-color: var(--accent-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
         }
         
-        /* Effet de clic */
-        .stButton > button:active {
-            transform:  translateY(0);
-            box-shadow: 0 2px 10px rgba(39, 174, 96, 0.3);
+        /* État actif */
+        . stButton > button: active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
         }
         
-        /* Animation de pulsation */
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
+        /* Focus */
         .stButton > button:focus {
-            animation: pulse 0.5s ease;
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+        
+        /* Boutons dans les colonnes (questions rapides) */
+        [data-testid="column"] . stButton > button {
+            font-size: 0.9rem;
+            padding: 0.65rem 1rem;
+            text-align: left;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -97,43 +213,46 @@ def inject_button_style():
 
 def inject_chat_style():
     """
-    Stylise les messages du chat (utilisateur et assistant).
-    Applique : bulles de chat colorées, avatars, espacement, alignement.
+    Messages de chat avec bulles épurées et modernes.
+    Compatible light/dark mode.
     """
     st.markdown("""
         <style>
         /* Conteneur des messages */
         .stChatMessage {
-            background-color: transparent;
-            border-radius: 15px;
-            padding: 1rem;
-            margin: 0.5rem 0;
+            padding: 1.25rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+            background-color:  var(--bg-secondary);
+            border:  1px solid var(--border-color);
+            transition: all 0.2s ease;
         }
         
         /* Messages utilisateur */
         .stChatMessage[data-testid="user-message"] {
-            background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin-left: 20%;
+            background:  linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid var(--accent-color);
+            border:  1px solid var(--accent-color);
         }
         
         /* Messages assistant */
         .stChatMessage[data-testid="assistant-message"] {
-            background-color: #f8f9fa;
-            border:  2px solid #e9ecef;
-            margin-right: 20%;
-        }
-        
-        /* Icônes de chat */
-        .stChatMessage img {
-            border-radius: 50%;
-            border: 3px solid #27AE60;
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-secondary);
         }
         
         /* Texte dans les messages */
         .stChatMessage p {
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+        
+        /* Avatar dans les messages */
+        .stChatMessage [data-testid="chatAvatarIcon"] {
+            background-color: var(--accent-color);
+            border-radius: 8px;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -141,38 +260,49 @@ def inject_chat_style():
 
 def inject_input_style():
     """
-    Personnalise le champ de saisie du chat.
-    Applique : bordure élégante, focus animé, placeholder stylisé.
+    Champ de saisie minimaliste et fonctionnel.
     """
     st.markdown("""
         <style>
-        /* Champ de saisie principal */
+        /* Conteneur du chat input */
         .stChatInput {
-            border-radius: 25px;
-            border: 2px solid #e9ecef;
-            transition: all 0.3s ease;
+            border-radius: 12px;
+            padding: 0.5rem 0;
         }
         
-        /* Input texte */
+        /* Champ de saisie */
         .stChatInput > div > div > input {
-            border-radius: 25px;
-            border: 2px solid #27AE60;
-            padding:  1rem 1.5rem;
-            font-size: 1rem;
-            transition: all 0.3s ease;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.85rem 1.2rem;
+            font-size:  0.95rem;
+            transition: all 0.2s ease;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
         }
         
         /* Focus sur l'input */
         .stChatInput > div > div > input:focus {
-            border-color: #229954;
-            box-shadow:  0 0 0 3px rgba(39, 174, 96, 0.1);
+            border-color: var(--accent-color);
             outline: none;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
         }
         
         /* Placeholder */
         .stChatInput > div > div > input::placeholder {
-            color: #95a5a6;
-            font-style: italic;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        
+        /* Bouton d'envoi */
+        .stChatInput button {
+            border-radius: 8px;
+            background-color: var(--accent-color);
+            transition: all 0.2s ease;
+        }
+        
+        . stChatInput button:hover {
+            background-color: var(--accent-hover);
         }
         </style>
     """, unsafe_allow_html=True)
@@ -180,52 +310,46 @@ def inject_input_style():
 
 def inject_header_style():
     """
-    Stylise les titres et en-têtes (h1, h2, h3).
-    Applique : dégradés de couleur, ombres, animations d'apparition.
+    Titres simples et lisibles avec hiérarchie claire.
     """
-    st.markdown("""
+    st. markdown("""
         <style>
-        /* Titres principaux */
-        h1, h2, h3 {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip:  text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 700;
-            letter-spacing: -0.5px;
+        /* Titres */
+        h1, h2, h3, h4 {
+            color:  var(--text-primary);
+            font-weight: 600;
+            letter-spacing: -0.02em;
         }
         
         /* Titre H1 */
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
-            animation: fadeInDown 0.8s ease;
+            line-height: 1.2;
+            font-weight: 700;
         }
         
         /* Titre H2 */
         h2 {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
-            animation: fadeInDown 0.8s ease 0.2s backwards;
+            font-size:  1.875rem;
+            margin-bottom: 0.875rem;
+            line-height:  1.3;
         }
         
         /* Titre H3 */
         h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.6rem;
-            color: #2c3e50;
+            font-size:  1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            color: var(--text-primary);
         }
         
-        /* Animation d'apparition */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Titre H4 (sous-titres) */
+        h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -233,43 +357,36 @@ def inject_header_style():
 
 def inject_card_style():
     """
-    Crée des cartes élégantes pour contenus (vidéos, infos).
-    Applique : ombres, bordures arrondies, effets de survol.
+    Cartes modernes pour organiser le contenu.
     """
     st.markdown("""
         <style>
-        /* Cartes génériques */
+        /* Cartes */
         .card {
-            background: white;
-            border-radius: 15px;
+            background:  var(--bg-primary);
+            border:  1px solid var(--border-color);
+            border-radius: 12px;
             padding: 1.5rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin:  1rem 0;
+            margin: 1rem 0;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
         
-        /* Effet de survol sur les cartes */
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
         }
         
         /* Conteneurs de colonnes */
         [data-testid="column"] {
-            background: transparent;
             padding: 0.5rem;
         }
         
-        /* Images dans les cartes */
-        . card img {
-            border-radius: 10px;
-            width: 100%;
-            height:  auto;
-            transition: transform 0.3s ease;
-        }
-        
-        .card img:hover {
-            transform: scale(1.05);
+        /* Containers Streamlit */
+        [data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"] {
+            background-color: var(--bg-primary);
+            border-radius: 12px;
+            padding: 1rem;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -277,28 +394,35 @@ def inject_card_style():
 
 def inject_spinner_style():
     """
-    Personnalise les spinners et indicateurs de chargement.
-    Applique : couleurs personnalisées, animations fluides.
+    Indicateur de chargement minimaliste et moderne.
     """
-    st.markdown("""
+    st. markdown("""
         <style>
-        /* Conteneur du spinner */
+        /* Spinner */
         .stSpinner > div {
-            border-top-color: #27AE60 !important;
-            border-right-color: #27AE60 !important;
+            border-top-color: var(--accent-color) !important;
+            border-width: 3px !important;
         }
         
         /* Texte du spinner */
         .stSpinner > div > div {
-            color: #27AE60;
-            font-weight: 600;
-            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
         }
         
-        /* Animation personnalisée */
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        /* Animation de pulsation pour le spinner */
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity:  0.5;
+            }
+        }
+        
+        . stSpinner {
+            animation: pulse 1.5s ease-in-out infinite;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -306,30 +430,35 @@ def inject_spinner_style():
 
 def inject_image_style():
     """
-    Améliore le rendu des images (thumbnails vidéos, etc.).
-    Applique : bordures arrondies, ombres, effets de zoom au survol.
+    Images avec style épuré et moderne.
     """
     st.markdown("""
         <style>
-        /* Toutes les images */
+        /* Images */
         img {
             border-radius: 12px;
-            box-shadow:  0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width:  100%;
+            height: auto;
             transition: all 0.3s ease;
         }
         
-        /* Effet de survol sur images */
-        img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-            cursor: pointer;
-        }
-        
-        /* Images dans les colonnes */
+        /* Images dans colonnes */
         [data-testid="column"] img {
             width: 100%;
-            height:  auto;
             object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Effet hover sur les images */
+        [data-testid="column"] img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* Images de vidéos (thumbnails) */
+        .stImage {
+            border-radius: 12px;
+            overflow: hidden;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -337,56 +466,44 @@ def inject_image_style():
 
 def inject_link_style():
     """
-    Stylise les liens (vidéos YouTube, etc.).
-    Applique : couleurs vives, soulignement animé, effets de survol. 
+    Liens simples et lisibles avec effet moderne.
     """
-    st.markdown("""
+    st. markdown("""
         <style>
-        /* Liens généraux */
+        /* Liens */
         a {
-            color: #27AE60;
+            color: var(--accent-color);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
+            transition: all 0.2s ease;
             position: relative;
-            transition: all 0.3s ease;
         }
         
-        /* Soulignement animé */
+        /* Survol */
+        a:hover {
+            color: var(--accent-hover);
+        }
+        
+        /* Effet underline animé */
         a::after {
-            content:  '';
+            content: '';
             position: absolute;
             width: 0;
             height:  2px;
             bottom:  -2px;
             left: 0;
-            background-color: #27AE60;
+            background-color: var(--accent-color);
             transition: width 0.3s ease;
         }
         
-        /* Effet de survol */
-        a:hover {
-            color:  #229954;
+        a: hover::after {
+            width:  100%;
         }
         
-        a:hover::after {
-            width: 100%;
-        }
-        
-        /* Liens dans les boutons vidéo */
-        .stMarkdown a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
-            color: white ! important;
-            border-radius:  8px;
-            transition: all 0.3s ease;
-        }
-        
-        .stMarkdown a:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        /* Liens dans les messages de chat */
+        .stChatMessage a {
+            color: var(--accent-color);
+            font-weight: 600;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -394,36 +511,32 @@ def inject_link_style():
 
 def inject_container_style():
     """
-    Améliore les conteneurs et sections de l'application.
-    Applique : espacements, arrière-plans subtils, séparateurs.
+    Conteneurs et sections épurés.
     """
     st.markdown("""
         <style>
-        /* Conteneurs principaux */
+        /* Conteneurs */
         .element-container {
             margin: 0. 5rem 0;
         }
         
-        /* Sections avec bordures */
+        /* Espacement vertical */
         [data-testid="stVerticalBlock"] {
             gap: 1rem;
-        }
-        
-        /* Conteneurs personnalisés */
-        .custom-container {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 1rem 0;
-            border-left: 5px solid #27AE60;
         }
         
         /* Séparateurs */
         hr {
             border: none;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #27AE60, transparent);
-            margin: 2rem 0;
+            height: 1px;
+            background-color: var(--border-color);
+            margin:  2. 5rem 0;
+        }
+        
+        /* Containers avec bordure */
+        . stContainer {
+            border-radius: 12px;
+            padding: 1.5rem;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -431,13 +544,29 @@ def inject_container_style():
 
 def inject_animation_style():
     """
-    Ajoute des animations d'apparition et de transition.
-    Applique : fade-in, slide-in, bounce pour éléments dynamiques.
+    Animations légères et fluides.
     """
     st.markdown("""
         <style>
-        /* Animation fade-in globale */
+        /* Animation fade-in légère */
         @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Application aux messages */
+        .stChatMessage {
+            animation: fadeIn 0.4s ease;
+        }
+        
+        /* Animation slide-up pour les éléments */
+        @keyframes slideUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
@@ -448,48 +577,94 @@ def inject_animation_style():
             }
         }
         
-        /* Animation slide-in depuis la gauche */
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
+        /* Application aux conteneurs */
+        .element-container {
+            animation: slideUp 0.3s ease;
         }
         
-        /* Animation slide-in depuis la droite */
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
+        /* Transition douce pour tous les éléments interactifs */
+        button, input, a, .card {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+
+def inject_video_recommendations_style():
+    """
+    Style pour les vidéos recommandées dans le chat.
+    """
+    st.markdown("""
+        <style>
+        /* Conteneur des vidéos recommandées */
+        .stChatMessage [data-testid="column"] {
+            background-color: transparent;
+            padding: 0.5rem;
         }
         
-        /* Animation bounce */
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        /* Cartes de vidéos */
+        .stChatMessage [data-testid="column"] > div {
+            background-color: var(--bg-primary);
+            border:  1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            height: 100%;
         }
         
-        /* Appliquer fade-in aux messages */
-        .stChatMessage {
-            animation: fadeIn 0.5s ease;
+        . stChatMessage [data-testid="column"] > div:hover {
+            transform: translateY(-4px);
+            box-shadow:  0 8px 20px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent-color);
         }
         
-        /* Appliquer slide-in aux colonnes */
-        [data-testid="column"]:nth-child(odd) {
-            animation: slideInLeft 0.6s ease;
+        /* Titre des vidéos */
+        .stChatMessage [data-testid="column"] p strong {
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
         
-        [data-testid="column"]:nth-child(even) {
-            animation: slideInRight 0.6s ease;
+        /* Liens vers les vidéos */
+        . stChatMessage [data-testid="column"] a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            background-color: var(--accent-color);
+            color:  white ! important;
+            border-radius:  6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        
+        .stChatMessage [data-testid="column"] a:hover {
+            background-color: var(--accent-hover);
+            transform:  scale(1.05);
+        }
+        
+        . stChatMessage [data-testid="column"] a:: after {
+            display: none;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+
+def inject_sidebar_style():
+    """
+    Style pour la sidebar si utilisée.
+    """
+    st.markdown("""
+        <style>
+        /* Sidebar */
+        [data-testid="stSidebar"] {
+            background-color: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+        }
+        
+        [data-testid="stSidebar"] . block-container {
+            padding: 2rem 1rem;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -497,10 +672,11 @@ def inject_animation_style():
 
 def inject_all_styles():
     """
-    Fonction pratique qui applique TOUS les styles en une seule fois.
-    Idéal pour initialiser le design complet de l'application.
+    Applique tous les styles minimalistes en une seule fois.
+    Cette fonction doit être appelée au début de votre application Streamlit.
     """
     inject_global_styles()
+    inject_header_logo_style()
     inject_button_style()
     inject_chat_style()
     inject_input_style()
@@ -511,8 +687,6 @@ def inject_all_styles():
     inject_link_style()
     inject_container_style()
     inject_animation_style()
+    inject_video_recommendations_style()
+    inject_sidebar_style()
 
-
-# Exemple d'utilisation dans app.py : 
-# from streamlit_styles import inject_all_styles
-# inject_all_styles()
