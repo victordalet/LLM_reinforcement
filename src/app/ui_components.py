@@ -94,3 +94,45 @@ def render_header():
 
 
 
+def render_quick_questions():
+    """Affiche les boutons de questions rapides."""
+    with st.container():
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Comment faire un squat correctement ?"):
+                st.session_state.current_question = "Comment faire un squat correctement ?"
+            if st.button("Quels exercices pour perdre du poids ?"):
+                st.session_state.current_question = "Quels exercices pour perdre du poids ?"
+        with col2:
+            if st.button("Comment éviter les douleurs au dos ?"):
+                st.session_state.current_question = "Comment éviter les douleurs au dos ?"
+            if st.button("Programme full-body pour débutants ?"):
+                st.session_state.current_question = "Programme full-body pour débutants ?"
+
+        st.markdown("<p style='text-align:  center; font-weight: bold; color: #27AE60;'>🚀 Conseils d'expert 100% gratuits et locaux !</p>", unsafe_allow_html=True)
+
+
+def handle_user_input():
+    """Gère l'input utilisateur (questions prédéfinies et chat input)"""
+    # Gestion des questions pré-définies
+    if st.session_state.current_question:
+        add_message("user", st.session_state.current_question)
+        with st.chat_message("user"):
+            st.markdown(st.session_state.current_question)
+        response, recommendations, response_time = asyncio.run(
+            stream_response(st.session_state.current_question)
+        )
+        add_message("assistant", response, recommendations, response_time)
+        st.session_state.current_question = None
+        st.rerun()
+
+    # Input utilisateur
+    if prompt := st.chat_input("Quelle est ta question sur le fitness ou la nutrition ?"):
+        add_message("user", prompt)
+        with st.chat_message("user"):
+            st.markdown(prompt)
+        response, recommendations, response_time = asyncio.run(
+            stream_response(prompt)
+        )
+        add_message("assistant", response, recommendations, response_time)
+        st.rerun()
