@@ -10,7 +10,7 @@ load_dotenv()
 
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
-# init du llm avec Ollama => Mistral 7B
+# init du LLM avec Ollama => Mistral 7B
 llm = ChatOllama(
     model="mistral: 7b-instruct",
     temperature=0.7,
