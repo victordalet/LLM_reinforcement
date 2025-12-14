@@ -12,7 +12,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
 # init du LLM avec Ollama => Mistral 7B
 llm = ChatOllama(
-    model="mistral: 7b-instruct",
+    model="mistral:7b-instruct",
     temperature=0.7,
     num_predict=512,  # une limite de tokens pour la réponse
     top_p=0.9,

@@ -1,4 +1,5 @@
 import streamlit as st
+from css import inject_all_styles
 from ui_components import (
     init_session_state,
     render_header,
@@ -10,6 +11,8 @@ from ui_components import (
 
 #config de la page
 st.set_page_config(page_title="Coach Sportif IA", page_icon="💪", layout="wide")
+
+inject_all_styles()
 
 
 # initialisation

@@ -16,7 +16,7 @@ try:
 except:  
     collection = chroma_client.create_collection(
         name="fitness_coach",
-        metadata={"hnsw: space": "cosine"}
+        metadata={"hnsw:space": "cosine"}
     )
     
     # upload dataset fitness JSON file

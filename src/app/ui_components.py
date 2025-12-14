@@ -26,7 +26,7 @@ def add_message(role, content, recommendations=None, response_time=None):
 
 def display_chat_history():
     """Affiche l'historique des messages"""
-    for message in st.session_state.chat_history:
+    for message in st.session_state.chat_history[::-1]:
         with st.chat_message(message["role"]):
             st.markdown(message["content"], unsafe_allow_html=True)
 
