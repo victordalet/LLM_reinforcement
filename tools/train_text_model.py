@@ -35,9 +35,11 @@ class TrainTextModel:
         self.model.config.pad_token_id = self.tokenizer.eos_token_id
 
     def tokenize_dataset(self):
-
         for article in self.dataset:
-            text = article["title"] + "\n" + article["content"]
+            if isinstance(article, str):
+                text = article["title"] + "\n" + article["content"]
+            else:
+                text = article["title"] + "\n" + "".join(article["content"])
             tokenized = self.tokenizer(
                 text,
                 return_tensors="pt",
