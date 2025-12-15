@@ -1,6 +1,11 @@
+import time
+
 from src.commons.data_manager import DataManager
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
 import torch
+
+import os
+import matplotlib.pyplot as plt
 
 
 class TrainTextModel:
@@ -11,7 +16,7 @@ class TrainTextModel:
         self.inputs = []
         self.train_data = []
         self.val_data = []
-        self.dataset = []  # list of dict with "title" and "content" keys
+        self.dataset = []
 
     def load_dataset(self):
         dataset_path = DataManager.ls_directory("dataset")
@@ -23,7 +28,7 @@ class TrainTextModel:
         self.dataset = dataset
 
     def load_model(self):
-        model_name = "distilgpt2"
+        model_name = "distilgpt2"  # "huggyllama/llama-7b"
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(model_name)
         self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -59,8 +64,24 @@ class TrainTextModel:
         batch["labels"] = batch["input_ids"].clone()
         return batch
 
+    @staticmethod
+    def graph_data(trainer, output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+        history = trainer.state.log_history
+        loss_entries = [h for h in history if "loss" in h]
+        if loss_entries:
+            steps = [h.get("step", i) for i, h in enumerate(loss_entries)]
+            losses = [h["loss"] for h in loss_entries]
+            plt.figure()
+            plt.plot(steps, losses, marker="o")
+            plt.xlabel("step")
+            plt.ylabel("loss")
+            plt.title("Training loss")
+            plt.savefig(os.path.join(output_dir, "training_loss.png"))
+            plt.close()
+
     def run(self, epochs: int = 3, lr: float = 5e-5):
-        output_dir = "./mini-gpt-finetuned"
+        output_dir = f"./models/text-model-finetuned_{time.strftime('%Y-%m-%d-%H-%M')}"
         self.load_dataset()
         self.load_model()
         self.tokenize_dataset()
@@ -74,6 +95,7 @@ class TrainTextModel:
             weight_decay=0.01,
             logging_steps=10,
             save_strategy="epoch",
+            # use_cpu=True,
         )
 
         trainer = Trainer(
@@ -86,7 +108,10 @@ class TrainTextModel:
 
         trainer.train()
 
+        self.graph_data(trainer, output_dir)
+
         trainer.save_model(output_dir)
+
         self.tokenizer.save_pretrained(output_dir)
 
 

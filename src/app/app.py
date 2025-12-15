@@ -15,8 +15,8 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-output_dir = "./mini-gpt-finetuned"
-image_output_dir = "./image-model-finetuned"
+output_dir = DataManager.find_latest_directory("./models/", contain="text-model")
+image_output_dir = DataManager.find_latest_directory("./models/", contain="image-model")
 
 
 @st.cache_resource
@@ -71,6 +71,7 @@ if prompt := st.chat_input("What is up?"):
             top_p=0.95,
         )
         assistant_content = outputs[0]["generated_text"]
+        assistant_content = assistant_content[len(prompt) :].strip()
 
         with st.chat_message("assistant"):
             st.markdown(assistant_content)

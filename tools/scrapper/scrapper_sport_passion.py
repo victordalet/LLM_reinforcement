@@ -29,16 +29,15 @@ class ScrapperSportPassion:
             pictures_urls[i] = full_pic_url
         return {"title": title, "content": content, "pictures_urls": pictures_urls}
 
-    @staticmethod
-    def run():
-        urls = ScrapperSportPassion.scrap_link()
+    def run(self):
+        urls = self.scrap_link()
         articles = []
         for url in urls:
-            article = ScrapperSportPassion.scrap_article(url)
+            article = self.scrap_article(url)
             articles.append(article)
         DataManager.save_json(articles, "dataset/sport_passion_articles.json")
 
 
 if __name__ == "__main__":
     DataManager.create_directory("dataset")
-    ScrapperSportPassion.run()
+    ScrapperSportPassion().run()
