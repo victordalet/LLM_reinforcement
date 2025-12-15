@@ -1,0 +1,1048 @@
+[
+  {
+    "title": "Demi-redressement assis",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "corps seulement",
+    "equipment": "corps seulement",
+    "primaryMuscles": [
+      "abdominaux"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Allongez-vous sur le sol et fixez vos pieds. Vos jambes doivent être pliées au niveau des genoux.",
+      "Placez vos mains derrière ou sur le côté de votre tête. Vous commencerez avec votre dos sur le sol. Ce sera votre position de départ.",
+      "Contractez vos hanches et votre colonne vertébrale pour soulever votre torse vers vos genoux.",
+      "Au sommet de la contraction, votre torse doit être perpendiculaire au sol. Inversez le mouvement, en ne descendant qu'aux Â¾ du parcours.",
+      "Répétez l'exercice le nombre de fois recommandé."
+    ],
+    "category": "force",
+    "images": [
+      "3_4_Sit-Up/0.jpg",
+      "3_4_Sit-Up/1.jpg"
+    ],
+    "id": "3_4_Sit-Up"
+  },
+  {
+    "title": "Ischio-jambiers 90/90",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": null,
+    "equipment": "corps seulement",
+    "primaryMuscles": [
+      "ischio-jambiers"
+    ],
+    "secondaryMuscles": [
+      "mollets"
+    ],
+    "content": [
+      "Allongez-vous sur le dos, une jambe tendue.",
+      "Avec l'autre jambe, pliez la hanche et le genou à 90 degrés. Vous pouvez maintenir votre jambe avec vos mains si nécessaire. Ce sera votre position de départ.",
+      "Étendez votre jambe directement dans les airs, en marquant une brève pause au sommet. Ramenez la jambe à la position de départ.",
+      "Répétez l'exercice 10 à 20 fois, puis passez à l'autre jambe."
+    ],
+    "category": "étirement",
+    "images": [
+      "90_90_Hamstring/0.jpg",
+      "90_90_Hamstring/1.jpg"
+    ],
+    "id": "90_90_Hamstring"
+  },
+  {
+    "title": "Machine à crunch abdominal",
+    "force": "tirer",
+    "level": "intermédiaire",
+    "mechanic": "isolement",
+    "equipment": "machine",
+    "primaryMuscles": [
+      "abdominaux"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Sélectionnez une résistance légère et asseyez-vous sur la machine abdominale en plaçant vos pieds sous les coussinets prévus à cet effet et en saisissant les poignées supérieures. Vos bras doivent être pliés à un angle de 90 degrés lorsque vous posez les triceps sur les coussinets prévus à cet effet. Ce sera votre position de départ.",
+      "En même temps, commencez à lever les jambes tout en contractant le haut de votre torse. Expirez lorsque vous effectuez ce mouvement. Conseil : veillez à utiliser un mouvement lent et contrôlé. Concentrez-vous sur l'utilisation de vos abdominaux pour déplacer le poids tout en relâchant vos jambes et vos pieds.",
+      "Après une seconde de pause, revenez lentement à la position de départ en inspirant.",
+      "Répétez le mouvement le nombre de fois prescrit."
+    ],
+    "category": "force",
+    "images": [
+      "Ab_Crunch_Machine/0.jpg",
+      "Ab_Crunch_Machine/1.jpg"
+    ],
+    "id": "Ab_Crunch_Machine"
+  },
+  {
+    "title": "Roue abdominale",
+    "force": "tirer",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "abdominaux"
+    ],
+    "secondaryMuscles": [
+      "épaules"
+    ],
+    "content": [
+      "Tenez la roue abdominale à deux mains et agenouillez-vous sur le sol.",
+      "Placez maintenant la roue abdominale sur le sol devant vous de manière à être à quatre pattes (comme dans une position de pompes à genoux). Ce sera votre position de départ.",
+      "Faites rouler lentement la roue abdominale droit devant, en étirant votre corps en position droite. Conseil : descendez aussi loin que possible sans toucher le sol avec votre corps. Inspirez pendant cette partie du mouvement.",
+      "Après une pause dans la position étirée, commencez à vous ramener à la position de départ en expirant. Conseil : allez-y doucement et gardez vos abdominaux contractés en permanence."
+    ],
+    "category": "force",
+    "images": [
+      "Ab_Roller/0.jpg",
+      "Ab_Roller/1.jpg"
+    ],
+    "id": "Ab_Roller"
+  },
+  {
+    "title": "Adducteur",
+    "force": "statique",
+    "level": "intermédiaire",
+    "mechanic": "isolement",
+    "equipment": "rouleau en mousse",
+    "primaryMuscles": [
+      "adducteurs"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Allongez-vous face contre terre avec une jambe sur un rouleau en mousse.",
+      "Faites pivoter la jambe de manière à ce que le rouleau en mousse soit en contact avec l'intérieur de votre cuisse. Déplacez autant de poids que possible sur le rouleau en mousse.",
+      "Tout en essayant de détendre les muscles de l'intérieur de la cuisse, faites rouler le rouleau en mousse entre votre hanche et votre genou, en maintenant les points de tension pendant 10 à 30 secondes. Répétez l'opération avec l'autre jambe."
+    ],
+    "category": "étirement",
+    "images": [
+      "Adductor/0.jpg",
+      "Adductor/1.jpg"
+    ],
+    "id": "Adducteur"
+  },
+  {
+    "title": "Adducteur/Aine",
+    "force": "statique",
+    "level": "intermédiaire",
+    "mechanic": null,
+    "equipment": null,
+    "primaryMuscles": [
+      "adducteurs"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Allongez-vous sur le dos, les pieds levés vers le plafond.",
+      "Demandez à votre partenaire de tenir vos pieds ou vos chevilles. Écartez vos jambes aussi loin que possible. Ce sera votre position de départ.",
+      "Essayez de serrer vos jambes ensemble pendant 10 secondes ou plus, tandis que votre partenaire vous en empêche.",
+      "Maintenant, détendez les muscles de vos jambes pendant que votre partenaire écarte vos pieds, en vous étirant aussi loin que cela est confortable pour vous. Veillez à faire savoir à votre partenaire quand l'étirement est suffisant pour éviter de trop vous étirer ou de vous blesser."
+    ],
+    "category": "étirement",
+    "images": [
+      "Adductor_Groin/0.jpg",
+      "Adductor_Groin/1.jpg"
+    ],
+    "id": "Adductor_Groin"
+  },
+  {
+    "title": "Moulinet avancé avec kettlebell",
+    "force": "pousser",
+    "level": "intermédiaire",
+    "mechanic": "isolement",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "abdominaux"
+    ],
+    "secondaryMuscles": [
+      "fessiers",
+      "ischio-jambiers",
+      "épaules"
+    ],
+    "content": [
+      "Nettoyez et pressez une kettlebell au-dessus de votre tête avec un bras.",
+      "En gardant la kettlebell verrouillée en permanence, poussez vos fesses dans la direction de la kettlebell verrouillée. Gardez le bras non travaillant derrière votre dos et tournez vos pieds à un angle de quarante-cinq degrés par rapport au bras avec la kettlebell.",
+      "Abaissez-vous autant que possible.",
+      "Faites une pause d'une seconde et inversez le mouvement pour revenir à la position de départ."
+    ],
+    "category": "force",
+    "images": [
+      "Advanced_Kettlebell_Windmill/0.jpg",
+      "Advanced_Kettlebell_Windmill/1.jpg"
+    ],
+    "id": "Advanced_Kettlebell_Windmill"
+  },
+  {
+    "title": "Vélo à air",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "corps seulement",
+    "primaryMuscles": [
+      "abdominaux"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Allongez-vous sur le sol, le bas du dos appuyé contre le sol. Pour cet exercice, vous devrez mettre vos mains à côté de votre tête. Faites attention cependant à ne pas vous forcer le cou pendant que vous l'effectuez. Maintenant, soulevez vos épaules en position de crunch.",
+      "Remontez les genoux jusqu'à ce qu'ils soient perpendiculaires au sol, les jambes parallèles au sol. Ce sera votre position de départ.",
+      "Maintenant, simultanément, effectuez lentement un mouvement de pédale en donnant un coup de pied vers l'avant avec la jambe droite et en ramenant le genou de la jambe gauche. Rapprochez votre coude droit de votre genou gauche en faisant une torsion sur le côté, tout en expirant.",
+      "Revenez à la position initiale en inspirant.",
+      "Faites une torsion de l'autre côté en pédalant et rapprochez votre coude gauche de votre genou droit et expirez.",
+      "Continuez à alterner de cette manière jusqu'à ce que toutes les répétitions recommandées pour chaque côté aient été effectuées."
+    ],
+    "category": "force",
+    "images": [
+      "Air_Bike/0.jpg",
+      "Air_Bike/1.jpg"
+    ],
+    "id": "Vélo à air"
+  },
+  {
+    "title": "Étirement des quadriceps à quatre pattes",
+    "force": "statique",
+    "level": "intermédiaire",
+    "mechanic": null,
+    "equipment": "corps seulement",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "quadriceps"
+    ],
+    "content": [
+      "Commencez à quatre pattes, puis soulevez votre jambe du sol et tenez votre pied avec votre main.",
+      "Utilisez votre main pour tenir le pied ou la cheville, en gardant le genou complètement fléchi, en étirant les quadriceps et les fléchisseurs de la hanche.",
+      "Concentrez-vous sur l'extension de vos hanches, en les poussant vers le sol. Maintenez la position pendant 10 à 20 secondes, puis changez de côté."
+    ],
+    "category": "étirement",
+    "images": [
+      "All_Fours_Quad_Stretch/0.jpg",
+      "All_Fours_Quad_Stretch/1.jpg"
+    ],
+    "id": "All_Fours_Quad_Stretch"
+  },
+  {
+    "title": "Curl alterné avec haltères",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "haltère",
+    "primaryMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "avant-bras"
+    ],
+    "content": [
+      "Tenez-vous droit avec le torse droit et un haltère dans chaque main, tenu à bout de bras. Les coudes doivent être près du torse.",
+      "Les paumes des mains doivent être face à votre torse. Ce sera votre position de départ.",
+      "Tout en maintenant le haut du bras immobile, enroulez le poids droit vers l'avant tout en contractant les biceps pendant que vous expirez. Continuez le mouvement jusqu'à ce que votre biceps soit complètement contracté et que les haltères soient au niveau des épaules. Maintenez la position contractée pendant une seconde tout en serrant le biceps. Astuce : seuls les avant-bras doivent bouger.",
+      "Commencez lentement à ramener les haltères à la position de départ en inspirant.",
+      "Répétez le mouvement avec la main gauche. Cela équivaut à une répétition.",
+      "Continuez à alterner de cette manière pendant le nombre de répétitions recommandé."
+    ],
+    "category": "force",
+    "images": [
+      "Alternate_Hammer_Curl/0.jpg",
+      "Alternate_Hammer_Curl/1.jpg"
+    ],
+    "id": "Alternate_Hammer_Curl"
+  },
+  {
+    "title": "Touchers de talons alternés",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "corps seulement",
+    "primaryMuscles": [
+      "abdominaux"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Allongez-vous sur le sol avec les genoux pliés et les pieds au sol à environ 18-24 pouces de distance. Vos bras doivent être étendus le long de votre corps. Ce sera votre position de départ.",
+      "Faites une torsion de votre torse vers l'avant et vers le haut d'environ 3-4 pouces vers le côté droit et touchez votre talon droit tout en maintenant la contraction pendant une seconde. Expirez en effectuant ce mouvement.",
+      "Maintenant, revenez lentement à la position de départ en inspirant.",
+      "Maintenant, faites une torsion de votre torse vers l'avant et vers le haut d'environ 3-4 pouces vers le côté gauche et touchez votre talon gauche tout en maintenant la contraction pendant une seconde. Expirez en effectuant ce mouvement, puis revenez à la position de départ en inspirant. Maintenant que les deux talons ont été touchés, cela est considéré comme 1 répétition.",
+      "Continuez à alterner les côtés de cette manière jusqu'à ce que toutes les répétitions prescrites soient effectuées."
+    ],
+    "category": "force",
+    "images": [
+      "Alternate_Heel_Touchers/0.jpg",
+      "Alternate_Heel_Touchers/1.jpg"
+    ],
+    "id": "Alternate_Heel_Touchers"
+  },
+  {
+    "title": "Curl alterné avec haltères sur banc incliné",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "haltère",
+    "primaryMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "avant-bras"
+    ],
+    "content": [
+      "Asseyez-vous sur un banc incliné avec un haltère dans chaque main, tenu à bout de bras. Conseil : gardez les coudes près du torse. Ce sera votre position de départ.",
+      "Tout en maintenant le haut du bras immobile, enroulez le poids droit vers l'avant tout en contractant les biceps pendant que vous expirez. Ce faisant, faites pivoter la main de manière à ce que la paume soit tournée vers le haut. Continuez le mouvement jusqu'à ce que votre biceps soit complètement contracté et que les haltères soient au niveau des épaules. Maintenez la position contractée pendant une seconde tout en serrant le biceps. Astuce : seuls les avant-bras doivent bouger.",
+      "Commencez lentement à ramener l'haltère à la position de départ en inspirant.",
+      "Répétez le mouvement avec la main gauche. Cela équivaut à une répétition.",
+      "Continuez à alterner de cette manière pendant le nombre de répétitions recommandé."
+    ],
+    "category": "force",
+    "images": [
+      "Alternate_Incline_Dumbbell_Curl/0.jpg",
+      "Alternate_Incline_Dumbbell_Curl/1.jpg"
+    ],
+    "id": "Alternate_Incline_Dumbbell_Curl"
+  },
+  {
+    "title": "Saut diagonal alterné des jambes",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": null,
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "abducteurs",
+      "adducteurs",
+      "mollets",
+      "fessiers",
+      "ischio-jambiers"
+    ],
+    "content": [
+      "Adoptez une position confortable avec un pied légèrement devant l'autre.",
+      "Commencez par pousser avec la jambe avant, en levant le genou opposé vers l'avant et aussi haut que possible avant d'atterrir. Essayez de couvrir autant de distance de chaque côté à chaque bond.",
+      "Il peut être utile d'utiliser une ligne sur le sol pour évaluer la distance d'un côté à l'autre.",
+      "Répétez la séquence avec l'autre jambe."
+    ],
+    "category": "plyométrie",
+    "images": [
+      "Alternate_Leg_Diagonal_Bound/0.jpg",
+      "Alternate_Leg_Diagonal_Bound/1.jpg"
+    ],
+    "id": "Alternate_Leg_Diagonal_Bound"
+  },
+  {
+    "title": "Développé Épaules Alterné aux Câbles",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "câble",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "triceps"
+    ],
+    "content": [
+      "Déplacez les câbles vers le bas de la tour et sélectionnez un poids approprié.",
+      "Saisissez les câbles et maintenez-les à hauteur d'épaule, les paumes vers l'avant. Ce sera votre position de départ.",
+      "En gardant la tête et la poitrine relevées, étendez le coude pour pousser un côté directement au-dessus de la tête.",
+      "Après une pause au sommet, revenez à la position de départ et répétez de l'autre côté."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Cable_Shoulder_Press/0.jpg",
+      "Alternating_Cable_Shoulder_Press/1.jpg"
+    ],
+    "id": "Alternating_Cable_Shoulder_Press"
+  },
+  {
+    "title": "Élévation Deltoïde Alternée",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "haltère",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "En position debout, tenez une paire d'haltères sur le côté.",
+      "En gardant vos coudes légèrement pliés, soulevez les poids directement devant vous à hauteur d'épaule, en évitant de balancer ou de tricher.",
+      "Ramenez les poids sur le côté.",
+      "Lors de la prochaine répétition, soulevez les poids latéralement, en les soulevant sur le côté jusqu'à la hauteur des épaules.",
+      "Ramenez les poids à la position de départ et continuez à alterner l'avant et le côté."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Deltoid_Raise/0.jpg",
+      "Alternating_Deltoid_Raise/1.jpg"
+    ],
+    "id": "Alternating_Deltoid_Raise"
+  },
+  {
+    "title": "Développé Couché Alterné au Sol",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "poitrine"
+    ],
+    "secondaryMuscles": [
+      "abdominaux",
+      "épaules",
+      "triceps"
+    ],
+    "content": [
+      "Allongez-vous sur le sol avec deux kettlebells à côté de vos épaules.",
+      "Placez-en un sur votre poitrine, puis l'autre, en saisissant les kettlebells par la poignée, les paumes vers l'avant.",
+      "Étendez les deux bras, de sorte que les kettlebells soient tenus au-dessus de votre poitrine. Abaissez un kettlebell, en l'amenant à votre poitrine et tournez le poignet dans la direction du kettlebell verrouillé.",
+      "Soulevez le kettlebell et répétez de l'autre côté."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Floor_Press/0.jpg",
+      "Alternating_Floor_Press/1.jpg"
+    ],
+    "id": "Alternating_Floor_Press"
+  },
+  {
+    "title": "Hang Clean Alterné",
+    "force": "tirer",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "ischio-jambiers"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "mollets",
+      "avant-bras",
+      "fessiers",
+      "bas du dos",
+      "trapèzes"
+    ],
+    "content": [
+      "Placez deux kettlebells entre vos pieds. Pour vous mettre en position de départ, poussez vos fesses vers l'arrière et regardez droit devant vous.",
+      "Nettoyez un kettlebell jusqu'à votre épaule et tenez l'autre kettlebell en position suspendue. Nettoyez le kettlebell jusqu'à votre épaule en étendant les jambes et les hanches tout en tirant le kettlebell vers vos épaules. Faites pivoter votre poignet en le faisant.",
+      "Abaissez le kettlebell nettoyé en position suspendue et nettoyez l'autre kettlebell. Répétez."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Hang_Clean/0.jpg",
+      "Alternating_Hang_Clean/1.jpg"
+    ],
+    "id": "Alternating_Hang_Clean"
+  },
+  {
+    "title": "Développé Kettlebell Alterné",
+    "force": "pousser",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "triceps"
+    ],
+    "content": [
+      "Nettoyez deux kettlebells jusqu'à vos épaules. Nettoyez les kettlebells jusqu'à vos épaules en étendant les jambes et les hanches tout en tirant les kettlebells vers vos épaules. Faites pivoter vos poignets en le faisant.",
+      "Poussez-en un directement au-dessus de la tête en étendant le coude, en le tournant de façon à ce que la paume soit face à l'avant tout en maintenant l'autre kettlebell immobile.",
+      "Abaissez le kettlebell pressé à la position de départ et appuyez immédiatement avec votre autre bras."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Kettlebell_Press/0.jpg",
+      "Alternating_Kettlebell_Press/1.jpg"
+    ],
+    "id": "Alternating_Kettlebell_Press"
+  },
+  {
+    "title": "Rowing Kettlebell Alterné",
+    "force": "tirer",
+    "level": "intermédiaire",
+    "mechanic": "isolement",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "milieu du dos"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "dorsaux"
+    ],
+    "content": [
+      "Placez deux kettlebells devant vos pieds. Pliez légèrement les genoux et poussez vos fesses autant que possible. Lorsque vous vous penchez pour vous mettre en position de départ, saisissez les deux kettlebells par les poignées.",
+      "Tirez un kettlebell du sol tout en tenant l'autre kettlebell. Rétractez l'omoplate du côté qui travaille, tout en fléchissant le coude, en tirant le kettlebell vers votre estomac ou votre cage thoracique.",
+      "Abaissez le kettlebell dans le bras qui travaille et répétez l'exercice avec l'autre bras."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Kettlebell_Row/0.jpg",
+      "Alternating_Kettlebell_Row/1.jpg"
+    ],
+    "id": "Alternating_Kettlebell_Row"
+  },
+  {
+    "title": "Rangée de renégat alternée",
+    "force": "tirer",
+    "level": "expert",
+    "mechanic": "composé",
+    "equipment": "kettlebells",
+    "primaryMuscles": [
+      "milieu du dos"
+    ],
+    "secondaryMuscles": [
+      "abdominaux",
+      "biceps",
+      "poitrine",
+      "dorsaux",
+      "triceps"
+    ],
+    "content": [
+      "Placez deux kettlebells sur le sol à la largeur des épaules. Placez-vous sur vos orteils et vos mains comme si vous faisiez une pompe, le corps droit et étendu. Utilisez les poignées des kettlebells pour soutenir le haut de votre corps. Vous devrez peut-être écarter les pieds pour plus de soutien.",
+      "Poussez un kettlebell dans le sol et ramez l'autre kettlebell, en rétractant l'omoplate du côté qui travaille tout en fléchissant le coude, en le tirant vers votre côté.",
+      "Abaissez ensuite le kettlebell sur le sol et commencez le kettlebell dans la main opposée. Répétez l'opération pendant plusieurs répétitions."
+    ],
+    "category": "force",
+    "images": [
+      "Alternating_Renegade_Row/0.jpg",
+      "Alternating_Renegade_Row/1.jpg"
+    ],
+    "id": "Alternating_Renegade_Row"
+  },
+  {
+    "title": "Cercles de cheville",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": null,
+    "primaryMuscles": [
+      "mollets"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Utilisez un objet solide comme un support à squats pour vous tenir.",
+      "Levez la jambe droite dans les airs (à environ 5 cm du sol) et effectuez un mouvement circulaire avec le gros orteil. Faites comme si vous dessiniez un grand cercle avec. Astuce : un cercle équivaut à une répétition. Respirez normalement pendant que vous effectuez le mouvement.",
+      "Lorsque vous avez terminé avec le pied droit, répétez avec la jambe gauche."
+    ],
+    "category": "étirement",
+    "images": [
+      "Ankle_Circles/0.jpg",
+      "Ankle_Circles/1.jpg"
+    ],
+    "id": "Ankle_Circles"
+  },
+  {
+    "title": "Cheville sur le genou",
+    "force": "statique",
+    "level": "débutant",
+    "mechanic": null,
+    "equipment": null,
+    "primaryMuscles": [
+      "fessiers"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "En position couchée, pliez les genoux et gardez les pieds sur le sol.",
+      "Placez la cheville d'un pied sur le genou opposé.",
+      "Saisissez la cuisse ou le genou de la jambe inférieure et tirez vos deux jambes vers la poitrine. Détendez votre cou et vos épaules. Maintenez la position pendant 10 à 20 secondes, puis changez de côté."
+    ],
+    "category": "étirement",
+    "images": [
+      "Ankle_On_The_Knee/0.jpg",
+      "Ankle_On_The_Knee/1.jpg"
+    ],
+    "id": "Ankle_On_The_Knee"
+  },
+  {
+    "title": "Tibial antérieur - SMR",
+    "force": "statique",
+    "level": "intermédiaire",
+    "mechanic": null,
+    "equipment": "autre",
+    "primaryMuscles": [
+      "mollets"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Commencez assis sur le sol, les jambes pliées et les pieds sur le sol.",
+      "À l'aide d'un rouleau de massage ou d'un rouleau à pâtisserie, appliquez une pression sur les muscles situés à l'extérieur de vos tibias. Travaillez juste en dessous du genou jusqu'au-dessus de la cheville, en marquant une pause aux points de tension pendant 10 à 30 secondes. Répétez l'opération sur l'autre jambe."
+    ],
+    "category": "étirement",
+    "images": [
+      "Anterior_Tibialis-SMR/0.jpg",
+      "Anterior_Tibialis-SMR/1.jpg"
+    ],
+    "id": "Anterior_Tibialis-SMR"
+  },
+  {
+    "title": "Presse anti-gravité",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "barre",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "milieu du dos",
+      "trapèzes",
+      "triceps"
+    ],
+    "content": [
+      "Placez une barre sur le sol derrière la tête d'un banc incliné.",
+      "Allongez-vous sur le banc face vers le bas. Avec une prise en pronation, soulevez la barre du sol. Fléchissez les coudes, en effectuant une flexion inversée pour amener la barre près de votre poitrine. Ce sera votre position de départ.",
+      "Pour commencer, poussez la barre devant votre tête en étendant vos coudes. Gardez vos bras parallèles au sol tout au long du mouvement.",
+      "Revenez à la position de départ et répétez pour terminer la série."
+    ],
+    "category": "force",
+    "images": [
+      "Anti-Gravity_Press/0.jpg",
+      "Anti-Gravity_Press/1.jpg"
+    ],
+    "id": "Anti-Gravity_Press"
+  },
+  {
+    "title": "Cercles de bras",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": null,
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "trapèzes"
+    ],
+    "content": [
+      "Levez-vous et étendez vos bras droits sur les côtés. Les bras doivent être parallèles au sol et perpendiculaires (angle de 90 degrés) à votre torse. Ce sera votre position de départ.",
+      "Commencez lentement à faire des cercles d'environ 30 cm de diamètre avec chaque bras tendu. Respirez normalement pendant que vous effectuez le mouvement.",
+      "Continuez le mouvement circulaire des bras tendus pendant environ dix secondes. Inversez ensuite le mouvement, en allant dans la direction opposée."
+    ],
+    "category": "étirement",
+    "images": [
+      "Arm_Circles/0.jpg",
+      "Arm_Circles/1.jpg"
+    ],
+    "id": "Arm_Circles"
+  },
+  {
+    "title": "Presse d'Arnold avec haltères",
+    "force": "pousser",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "haltère",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "triceps"
+    ],
+    "content": [
+      "Asseyez-vous sur un banc d'exercice avec un support dorsal et tenez deux haltères devant vous, à peu près au niveau du haut de la poitrine, les paumes face à votre corps et les coudes pliés. Astuce : Vos bras doivent être à côté de votre torse. La position de départ doit ressembler à la partie contractée d'une flexion d'haltère.",
+      "Maintenant, pour effectuer le mouvement, soulevez les haltères en faisant pivoter les paumes de vos mains jusqu'à ce qu'elles soient tournées vers l'avant.",
+      "Continuez à soulever les haltères jusqu'à ce que vos bras soient tendus au-dessus de vous en position de bras tendus. Expirez pendant cette partie du mouvement.",
+      "Après une seconde de pause en haut, commencez à abaisser les haltères à la position de départ en faisant pivoter les paumes de vos mains vers vous. Astuce : Le bras gauche sera tourné dans le sens inverse des aiguilles d'une montre tandis que le droit sera tourné dans le sens des aiguilles d'une montre. Inspirez pendant cette partie du mouvement.",
+      "Répétez le nombre de fois recommandé."
+    ],
+    "category": "force",
+    "images": [
+      "Arnold_Dumbbell_Press/0.jpg",
+      "Arnold_Dumbbell_Press/1.jpg"
+    ],
+    "id": "Arnold_Dumbbell_Press"
+  },
+  {
+    "title": "Autour du monde",
+    "force": "pousser",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "haltère",
+    "primaryMuscles": [
+      "poitrine"
+    ],
+    "secondaryMuscles": [
+      "épaules"
+    ],
+    "content": [
+      "Allongez-vous sur un banc plat en tenant un haltère dans chaque main, les paumes des mains tournées vers le plafond. Astuce : Vos bras doivent être parallèles au sol et à côté de vos cuisses. Pour éviter les blessures, assurez-vous de garder vos coudes légèrement pliés. Ce sera votre position de départ.",
+      "Déplacez maintenant les haltères en créant un demi-cercle en les déplaçant de la position initiale au-dessus de la tête. Tous les mouvements doivent se faire avec les bras parallèles au sol à tout moment. Inspirez pendant cette partie du mouvement.",
+      "Inversez le mouvement pour remettre le poids dans la position de départ en expirant."
+    ],
+    "category": "force",
+    "images": [
+      "Around_The_Worlds/0.jpg",
+      "Around_The_Worlds/1.jpg"
+    ],
+    "id": "Around_The_Worlds"
+  },
+  {
+    "title": "Entraîneur de pierre d'Atlas",
+    "force": "tirer",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "bas du dos"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "avant-bras",
+      "fessiers",
+      "ischio-jambiers",
+      "quadriceps"
+    ],
+    "content": [
+      "Cet entraîneur est efficace pour développer la force de la pierre d'Atlas pour ceux qui n'ont pas accès aux pierres, et sont généralement fabriqués à partir d'extrémités de barres ou de tuyaux lourds.",
+      "Commencez par charger le poids désiré sur la barre. Enjambez le poids, en enroulant vos bras autour de l'outil, en vous penchant au niveau des hanches.",
+      "Commencez par tirer le poids au-delà des genoux, en vous étendant à travers les hanches. Lorsque le poids dépasse les genoux, il peut être posé en le reposant sur vos cuisses et en vous asseyant en arrière, en le serrant fort contre votre poitrine.",
+      "Terminez le mouvement en vous étendant à travers vos hanches et vos genoux pour soulever le poids aussi haut que possible. Le poids peut être remis sur les genoux ou au sol pour des répétitions successives."
+    ],
+    "category": "homme fort",
+    "images": [
+      "Atlas_Stone_Trainer/0.jpg",
+      "Atlas_Stone_Trainer/1.jpg"
+    ],
+    "id": "Atlas_Stone_Trainer"
+  },
+  {
+    "title": "Pierres d'Atlas",
+    "force": "tirer",
+    "level": "expert",
+    "mechanic": "composé",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "bas du dos"
+    ],
+    "secondaryMuscles": [
+      "abdominaux",
+      "adducteurs",
+      "biceps",
+      "mollets",
+      "avant-bras",
+      "fessiers",
+      "ischio-jambiers",
+      "milieu du dos",
+      "quadriceps",
+      "trapèzes"
+    ],
+    "content": [
+      "Commencez avec la pierre d'atlas entre vos pieds. Penchez-vous au niveau des hanches pour enrouler vos bras verticalement autour de la pierre d'Atlas, en essayant de passer vos doigts sous la pierre. De nombreuses pierres auront une petite partie plate sur le fond, ce qui rendra la pierre plus facile à tenir.",
+      "En tirant la pierre dans votre torse, poussez à travers la moitié arrière de vos pieds pour tirer la pierre du sol.",
+      "Lorsque la pierre dépasse les genoux, posez-la en vous asseyant en arrière, en tirant la pierre sur le dessus de vos cuisses.",
+      "Asseyez-vous bas, en faisant monter la pierre haut sur votre poitrine pendant que vous changez votre prise pour atteindre le dessus de la pierre. Tenez-vous debout, en poussant avec vos hanches. Rapprochez-vous de la plate-forme de chargement et penchez-vous en arrière, en étendant les hanches pour faire monter la pierre aussi haut que possible."
+    ],
+    "category": "homme fort",
+    "images": [
+      "Atlas_Stones/0.jpg",
+      "Atlas_Stones/1.jpg"
+    ],
+    "id": "Atlas_Stones"
+  },
+  {
+    "title": "Soulevé de terre avec essieu",
+    "force": "tirer",
+    "level": "intermédiaire",
+    "mechanic": "composé",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "bas du dos"
+    ],
+    "secondaryMuscles": [
+      "avant-bras",
+      "fessiers",
+      "ischio-jambiers",
+      "milieu du dos",
+      "quadriceps",
+      "trapèzes"
+    ],
+    "content": [
+      "Approchez-vous de la barre de sorte qu'elle soit centrée au-dessus de vos pieds. Vos pieds doivent être écartés à la largeur des hanches. Penchez-vous au niveau de la hanche pour saisir la barre à la largeur des épaules, permettant à vos omoplates de se rétracter. Généralement, vous utiliseriez une prise par-dessus/par-dessous.",
+      "Une fois vos pieds et votre prise en place, prenez une grande inspiration, puis abaissez vos hanches et pliez les genoux jusqu'à ce que vos tibias entrent en contact avec la barre. Regardez droit devant avec votre tête, gardez votre poitrine relevée et votre dos arqué, et commencez à pousser à travers les talons pour déplacer le poids vers le haut.",
+      "Une fois que la barre dépasse les genoux, tirez agressivement la barre vers l'arrière, en rapprochant vos omoplates tout en poussant vos hanches vers l'avant dans la barre.",
+      "Abaissez la barre en vous penchant au niveau des hanches et en la guidant vers le sol."
+    ],
+    "category": "homme fort",
+    "images": [
+      "Axle_Deadlift/0.jpg",
+      "Axle_Deadlift/1.jpg"
+    ],
+    "id": "Axle_Deadlift"
+  },
+  {
+    "title": "Élévations latérales inversées - Avec des bandes",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "bandes",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "milieu du dos",
+      "triceps"
+    ],
+    "content": [
+      "Faites passer une bande autour d'un poteau fixe, comme celui d'un rack à squats.",
+      "Saisissez la bande par les poignées et reculez de manière à ce que la tension dans la bande augmente.",
+      "Étendez et levez les bras droit devant vous. Conseil : Vos bras doivent être droits et parallèles au sol, tout en étant perpendiculaires à votre torse. Vos pieds doivent être fermement plantés sur le sol, écartés à la largeur des épaules. Ce sera votre position de départ.",
+      "En expirant, déplacez vos bras sur les côtés et vers l'arrière. Gardez vos bras tendus et parallèles au sol. Continuez le mouvement jusqu'à ce que les bras soient tendus sur les côtés.",
+      "Après une pause, revenez à la position initiale en inspirant.",
+      "Répétez le nombre de fois recommandé."
+    ],
+    "category": "force",
+    "images": [
+      "Back_Flyes_-_With_Bands/0.jpg",
+      "Back_Flyes_-_With_Bands/1.jpg"
+    ],
+    "id": "Back_Flyes_-_With_Bands"
+  },
+  {
+    "title": "Traction arrière",
+    "force": "traction",
+    "level": "débutant",
+    "mechanic": "polyarticulaire",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "mollets",
+      "avant-bras",
+      "fessiers",
+      "ischio-jambiers",
+      "bas du dos"
+    ],
+    "content": [
+      "Chargez un traîneau avec le poids souhaité, en fixant une corde ou des sangles au traîneau que vous pouvez tenir.",
+      "Commencez l'exercice en vous déplaçant vers l'arrière sur une distance donnée. En vous penchant en arrière, étendez les jambes pour faire de petits pas afin de vous déplacer le plus rapidement possible."
+    ],
+    "category": "homme fort",
+    "images": [
+      "Backward_Drag/0.jpg",
+      "Backward_Drag/1.jpg"
+    ],
+    "id": "Backward_Drag"
+  },
+  {
+    "title": "Lancer de médecine-ball vers l'arrière",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "polyarticulaire",
+    "equipment": "medecine ball",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Cet exercice est préférable avec un partenaire. Si vous n'avez pas de partenaire, la balle peut être lancée et récupérée ou lancée contre un mur.",
+      "Commencez par vous tenir à quelques mètres devant votre partenaire, tous les deux face à la même direction. Commencez par tenir la balle entre vos jambes.",
+      "Accroupissez-vous, puis inversez brusquement la direction, en vous étendant complètement et en lançant la balle au-dessus de votre tête à votre partenaire.",
+      "Votre partenaire peut alors vous renvoyer la balle. Répétez le nombre de fois désiré."
+    ],
+    "category": "pliométrie",
+    "images": [
+      "Backward_Medicine_Ball_Throw/0.jpg",
+      "Backward_Medicine_Ball_Throw/1.jpg"
+    ],
+    "id": "Backward_Medicine_Ball_Throw"
+  },
+  {
+    "title": "Planche d'équilibre",
+    "force": null,
+    "level": "débutant",
+    "mechanic": "polyarticulaire",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "mollets"
+    ],
+    "secondaryMuscles": [
+      "ischio-jambiers",
+      "quadriceps"
+    ],
+    "content": [
+      "Placez une planche d'équilibre devant vous.",
+      "Tenez-vous dessus et essayez de vous équilibrer.",
+      "Maintenez l'équilibre aussi longtemps que vous le souhaitez."
+    ],
+    "category": "force",
+    "images": [
+      "Balance_Board/0.jpg",
+      "Balance_Board/1.jpg"
+    ],
+    "id": "Balance_Board"
+  },
+  {
+    "title": "Flexion de la jambe sur ballon",
+    "force": "traction",
+    "level": "débutant",
+    "mechanic": "isolation",
+    "equipment": "ballon d'exercice",
+    "primaryMuscles": [
+      "ischio-jambiers"
+    ],
+    "secondaryMuscles": [
+      "mollets",
+      "fessiers"
+    ],
+    "content": [
+      "Commencez au sol, allongé sur le dos avec les pieds sur le ballon.",
+      "Positionnez le ballon de sorte que, lorsque vos jambes sont tendues, vos chevilles soient sur le dessus du ballon. Ce sera votre position de départ.",
+      "Soulevez vos hanches du sol, en gardant votre poids sur les omoplates et vos pieds.",
+      "Fléchissez les genoux, en tirant le ballon le plus près possible de vous, en contractant les ischio-jambiers.",
+      "Après une brève pause, revenez à la position de départ."
+    ],
+    "category": "force",
+    "images": [
+      "Ball_Leg_Curl/0.jpg",
+      "Ball_Leg_Curl/1.jpg"
+    ],
+    "id": "Ball_Leg_Curl"
+  },
+  {
+    "title": "Traction assistée par bande",
+    "force": null,
+    "level": "débutant",
+    "mechanic": "polyarticulaire",
+    "equipment": "autre",
+    "primaryMuscles": [
+      "dorsaux"
+    ],
+    "secondaryMuscles": [
+      "abdominaux",
+      "avant-bras",
+      "milieu du dos"
+    ],
+    "content": [
+      "Étranglez la bande autour du centre de la barre de traction. Vous pouvez utiliser différentes bandes pour fournir différents niveaux d'assistance.",
+      "Tirez l'extrémité de la bande vers le bas et placez un genou plié dans la boucle, en vous assurant qu'il ne glissera pas. Prenez une prise moyenne à large sur la barre. Ce sera votre position de départ.",
+      "Tirez-vous vers le haut en contractant les dorsaux tout en fléchissant le coude. Le coude doit être entraîné vers votre côté. Tirez vers l'avant, en essayant de passer votre menton au-dessus de la barre. Évitez les mouvements de balancement ou de saccades.",
+      "Après une brève pause, revenez à la position de départ."
+    ],
+    "category": "force",
+    "images": [
+      "Band_Assisted_Pull-Up/0.jpg",
+      "Band_Assisted_Pull-Up/1.jpg"
+    ],
+    "id": "Band_Assisted_Pull-Up"
+  },
+  {
+    "title": "Band Good Morning",
+    "force": "traction",
+    "level": "débutant",
+    "mechanic": "polyarticulaire",
+    "equipment": "bandes",
+    "primaryMuscles": [
+      "ischio-jambiers"
+    ],
+    "secondaryMuscles": [
+      "fessiers",
+      "bas du dos"
+    ],
+    "content": [
+      "En utilisant une bande de 41 pouces, tenez-vous debout sur une extrémité, en écartant légèrement vos pieds. Penchez-vous au niveau des hanches pour faire passer l'extrémité de la bande derrière votre cou. Ce sera votre position de départ.",
+      "En gardant vos jambes droites, étendez les hanches pour revenir à une position presque verticale.",
+      "Assurez-vous de ne pas arrondir le dos lorsque vous redescendez à la position de départ."
+    ],
+    "category": "powerlifting",
+    "images": [
+      "Band_Good_Morning/0.jpg",
+      "Band_Good_Morning/1.jpg"
+    ],
+    "id": "Band_Good_Morning"
+  },
+  {
+    "title": "Band Good Morning (Traction)",
+    "force": "traction",
+    "level": "débutant",
+    "mechanic": "composé",
+    "equipment": "bandes",
+    "primaryMuscles": [
+      "ischio-jambiers"
+    ],
+    "secondaryMuscles": [
+      "fessiers",
+      "bas du dos"
+    ],
+    "content": [
+      "Enroulez la bande autour d'un poteau. Debout à une certaine distance, enroulez l'extrémité opposée autour du cou. Vos mains peuvent aider à maintenir la bande en position.",
+      "Commencez par vous pencher au niveau des hanches, en reculant vos fesses le plus loin possible. Gardez le dos plat et penchez-vous vers l'avant jusqu'à environ 90 degrés. Vos genoux ne doivent être que légèrement pliés.",
+      "Revenez à la position de départ en poussant avec les hanches pour revenir à une position debout."
+    ],
+    "category": "haltérophilie",
+    "images": [
+      "Band_Good_Morning_Pull_Through/0.jpg",
+      "Band_Good_Morning_Pull_Through/1.jpg"
+    ],
+    "id": "Band_Good_Morning_Pull_Through"
+  },
+  {
+    "title": "Adductions de hanche avec bande",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "bandes",
+    "primaryMuscles": [
+      "adducteurs"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Ancrez une bande autour d'un poteau solide ou d'un autre objet.",
+      "Tenez-vous avec votre côté gauche face au poteau, et passez votre pied droit dans la bande, en la plaçant autour de la cheville.",
+      "Tenez-vous droit et tenez-vous au poteau si nécessaire. Ce sera votre position de départ.",
+      "En gardant le genou droit, levez votre jambe droite sur le côté aussi loin que vous le pouvez.",
+      "Revenez à la position de départ et répétez le nombre de répétitions souhaité.",
+      "Changez de côté."
+    ],
+    "category": "force",
+    "images": [
+      "Band_Hip_Adductions/0.jpg",
+      "Band_Hip_Adductions/1.jpg"
+    ],
+    "id": "Band_Hip_Adductions"
+  },
+  {
+    "title": "Écarté de bande",
+    "force": "tirer",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "bandes",
+    "primaryMuscles": [
+      "épaules"
+    ],
+    "secondaryMuscles": [
+      "milieu du dos",
+      "trapèzes"
+    ],
+    "content": [
+      "Commencez avec vos bras tendus devant vous, en tenant la bande avec les deux mains.",
+      "Initiez le mouvement en effectuant un mouvement de mouche inversée, en déplaçant vos mains latéralement sur les côtés.",
+      "Gardez vos coudes tendus lorsque vous effectuez le mouvement, en amenant la bande à votre poitrine. Assurez-vous de garder vos épaules en arrière pendant l'exercice.",
+      "Faites une pause lorsque vous terminez le mouvement, en revenant à la position de départ sous contrôle."
+    ],
+    "category": "force",
+    "images": [
+      "Band_Pull_Apart/0.jpg",
+      "Band_Pull_Apart/1.jpg"
+    ],
+    "id": "Band_Pull_Apart"
+  },
+  {
+    "title": "Skull Crusher avec bande",
+    "force": "pousser",
+    "level": "débutant",
+    "mechanic": "isolement",
+    "equipment": "bandes",
+    "primaryMuscles": [
+      "triceps"
+    ],
+    "secondaryMuscles": [],
+    "content": [
+      "Fixez une bande à la base d'un rack ou du banc. Allongez-vous sur le banc de manière à ce que la bande soit alignée avec votre tête.",
+      "Saisissez la bande, en levant les coudes de manière à ce que le haut du bras soit perpendiculaire au sol. Avec le coude fléchi, la bande doit être au-dessus de votre tête. Ce sera votre position de départ.",
+      "Étendez le coude pour redresser votre bras, en gardant le haut de votre bras en place. Faites une pause en haut du mouvement, et revenez à la position de départ."
+    ],
+    "category": "force",
+    "images": [
+      "Band_Skull_Crusher/0.jpg",
+      "Band_Skull_Crusher/1.jpg"
+    ],
+    "id": "Band_Skull_Crusher"
+  }
+]
