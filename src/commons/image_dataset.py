@@ -27,7 +27,8 @@ class ImageDataset(Dataset):
     def _load_images(self):
         for item in self.dataset:
             prompt = item["title"] + " " + item["content"]
-
+            if "pictures_urls" not in item:
+                continue
             for url in item["pictures_urls"]:
                 try:
                     response = requests.get(url, timeout=10)

@@ -26,3 +26,15 @@ class DataManager:
     @staticmethod
     def exists_directory(path: str) -> bool:
         return os.path.exists(path) and os.path.isdir(path)
+
+    @staticmethod
+    def find_latest_directory(base_path: str, contain: str) -> str | None:
+        dirs = [
+            f"{base_path}/{d}"
+            for d in os.listdir(base_path)
+            if os.path.isdir(f"{base_path}/{d}") and contain in d
+        ]
+        if not dirs:
+            return None
+        latest_dir = max(dirs, key=os.path.getmtime)
+        return latest_dir

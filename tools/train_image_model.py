@@ -1,4 +1,6 @@
 import os
+import time
+
 from diffusers import StableDiffusionPipeline, DDPMScheduler
 from diffusers.optimization import get_scheduler
 import torch
@@ -6,6 +8,8 @@ from torch.utils.data import DataLoader
 
 from src.commons.data_manager import DataManager
 from src.commons.image_dataset import ImageDataset
+
+import matplotlib.pyplot as plt
 
 
 class TrainImageModel:
@@ -46,7 +50,13 @@ class TrainImageModel:
         self.train_dataset = torch.utils.data.Subset(dataset, range(0, split))
         self.val_dataset = torch.utils.data.Subset(dataset, range(split, len(dataset)))
 
-    def train(self, epochs=5, lr=1e-5, batch_size=2, out_dir="./image-model-finetuned"):
+    def train(
+            self,
+            epochs=5,
+            lr=1e-5,
+            batch_size=2,
+            out_dir=f"./models/image-model-finetuned_{time.strftime('%Y-%m-%d-%H-%M')}",
+    ):
 
         self.load_dataset()
         self.load_model()
@@ -73,6 +83,8 @@ class TrainImageModel:
 
         global_step = 0
 
+        epoch_save_result = []
+        loss_save_result = []
         for epoch in range(epochs):
             for batch in train_loader:
                 optimizer.zero_grad()
@@ -123,12 +135,21 @@ class TrainImageModel:
                     print(
                         f"Epoch {epoch} | Step {global_step} | Loss {loss.item():.4f}"
                     )
+                    epoch_save_result.append(epoch)
+                    loss_save_result.append(loss.item())
 
         DataManager.create_directory(out_dir)
+
+        plt.figure()
+        plt.plot(epoch_save_result, loss_save_result, marker="o")
+        plt.xlabel("epoch")
+        plt.ylabel("loss")
+        plt.title("Training loss")
+        plt.savefig(os.path.join(out_dir, "training_loss.png"))
+        plt.close()
+
         self.unet.save_pretrained(os.path.join(out_dir, "unet"))
         self.tokenizer.save_pretrained(out_dir)
-
-        print(f"Model saved in {out_dir}")
 
 
 if __name__ == "__main__":

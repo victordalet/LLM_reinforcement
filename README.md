@@ -5,22 +5,27 @@
 ```bash
 export PYTHONPATH=$(pwd)/src:$(pwd)
 uv run tools/scrapper/scrapper_sport_passion.py
+uv run tools/scrapper/scrapper_musculaction.py
+uv run tools/scrapper/scrapper_coach_hunter.py 
 ```
 
 ## Run app
 
 ```bash
+export PYTHONPATH=$(pwd)/src:$(pwd)
 streamlit run src/app/app.py
 ```
 
 # Run train text
 
 ```bash
-uv run tools/train_txt_model.py
+export PYTHONPATH=$(pwd)/src:$(pwd)
+uv run tools/train_text_model.py
 ```
 
 # Run train img
 
 ```bash
+export PYTHONPATH=$(pwd)/src:$(pwd)
 uv run tools/train_image_model.py
 ```

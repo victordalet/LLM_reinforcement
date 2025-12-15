@@ -1,4 +1,5 @@
 from typing import List
+import re
 
 
 class ParserManager:
@@ -28,3 +29,7 @@ class ParserManager:
                 results.remove(item)
 
         return results
+
+    @staticmethod
+    def strip_tags(s: str) -> str:
+        return re.sub(r"<[^>]+>", "", s).strip()
