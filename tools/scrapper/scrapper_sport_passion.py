@@ -20,6 +20,8 @@ class ScrapperSportPassion:
         data = RequestManager.get(url)
         title = ParserManager.get_between(data, "<title>", "</title>")[0]
         content_parts = ParserManager.get_between(data, "<p>", "</p>")
+        for i in range(len(content_parts)):
+            content_parts[i] = ParserManager.strip_tags(content_parts[i])
         content = "\n".join(content_parts)
         pictures_urls = ParserManager.get_between(
             data, "pictures/", '"', filter_to_remove="/"

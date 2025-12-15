@@ -24,6 +24,8 @@ class ScrapperMusculaction:
             title_parts = ParserManager.get_between(data, "<title>", "</title>")
         title = title_parts[0].strip()
         content_parts = ParserManager.get_between(data, "<p>", "</p>")
+        for i in range(len(content_parts)):
+            content_parts[i] = ParserManager.strip_tags(content_parts[i])
         content = "\n".join([p.strip() for p in content_parts])
         picture_parts = ParserManager.get_between(data, 'src="images/', '.jpg"')
         picture_url = ""
