@@ -83,7 +83,6 @@ class TrainImageModel:
 
         global_step = 0
 
-        epoch_save_result = []
         loss_save_result = []
         for epoch in range(epochs):
             for batch in train_loader:
@@ -135,13 +134,12 @@ class TrainImageModel:
                     print(
                         f"Epoch {epoch} | Step {global_step} | Loss {loss.item():.4f}"
                     )
-                    epoch_save_result.append(epoch)
                     loss_save_result.append(loss.item())
 
         DataManager.create_directory(out_dir)
 
         plt.figure()
-        plt.plot(epoch_save_result, loss_save_result, marker="o")
+        plt.plot([x for x in range(len(loss_save_result))], loss_save_result)
         plt.xlabel("epoch")
         plt.ylabel("loss")
         plt.title("Training loss")
