@@ -51,11 +51,11 @@ class TrainImageModel:
         self.val_dataset = torch.utils.data.Subset(dataset, range(split, len(dataset)))
 
     def train(
-            self,
-            epochs=5,
-            lr=1e-5,
-            batch_size=2,
-            out_dir=f"./models/image-model-finetuned_{time.strftime('%Y-%m-%d-%H-%M')}",
+        self,
+        epochs=5,
+        lr=1e-5,
+        batch_size=2,
+        out_dir=f"./models/image-model-finetuned_{time.strftime('%Y-%m-%d-%H-%M')}",
     ):
 
         self.load_dataset()
